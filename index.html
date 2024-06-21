@@ -74,6 +74,16 @@
         #contact {
             margin-bottom: 60px; /* Add margin to the bottom of the contact section */
         }
+
+        /* Flexbox for profile section */
+        .profile-section {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Space between items */
+        }
+        .profile-section img {
+            margin-left: 20px; /* Add space between image and text */
+        }
     </style>
 </head>
 <body>
@@ -94,9 +104,13 @@
     <div class="container">
         <section id="about" class="section">
             <h2>About Us</h2>
-            <img src="profile.jpg" alt="Aisha Aqeel" class="profile-img">
-            <p>Welcome to the research group of Dr. Aisha Aqeel, Head of the Emmy Noether Research Group.</p>
-            <p>Experimental Physics IV, University of Augsburg, Germany </p>
+            <div class="profile-section">
+                <div>
+                    <p>Welcome to the research group of Dr. Aisha Aqeel, Head of the Emmy Noether Research Group.</p>
+                    <p>Experimental Physics IV, University of Augsburg, Germany </p>
+                </div>
+                <img src="profile.jpg" alt="Aisha Aqeel" class="profile-img">
+            </div>
         </section>
         <section id="projects" class="section">
             <h2>Our Projects</h2>
@@ -137,8 +151,8 @@
         <section id="contact" class="section">
             <h2>Contact Us</h2>
             <p>For more information, research visits or collaboration inquiries, please reach out to us:</p>
-            <p>Email: <a href="mailto:aisha.aqeel@uni-a.de">aisha.aqeel@uni-a.de</a> or visit our 
-		    <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/physik/groups/exp4/team/aqeel/" target="_blank">group page</a></p>
+            <p>Email: <a href="mailto:aisha.aqeel@uni-a.de">aisha.aqeel@uni-a.de</a> or visit 
+		    <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/physik/groups/exp4/team/aqeel/" target="_blank">group page of Experimental Physics IV at the University of Augsburg website</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/aisha-aqeel-84417895" target="_blank">Aisha Aqeel</a></p>
             <p>Address: Universitätsstraße 1 (Physik Süd), 86159 Augsburg, Germany</p>
         </section>
