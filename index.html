@@ -92,6 +92,13 @@
             width: 24px;
             height: 24px;
         }
+
+        /* Styles for team members to ensure uniform size */
+        .team-member img {
+            width: 150px; /* Set a uniform width for team images */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the available space while maintaining aspect ratio */
+        }
     </style>
 </head>
 <body>
@@ -184,7 +191,4 @@
         </section>
     </div>
     <footer>
-        <p>&copy; Working Group Aqeel @ University of Augsburg. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <p>&copy; Working Group Aqeel @ University of Augsburg. All rights
