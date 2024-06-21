@@ -69,7 +69,7 @@
             object-fit: cover; /* Maintain aspect ratio without distortion */
             border-radius: 0; /* Ensure no rounding */
         }
-        
+
         /* Additional spacing at the bottom of the contact section */
         #contact {
             margin-bottom: 60px; /* Add margin to the bottom of the contact section */
@@ -83,6 +83,23 @@
         }
         .profile-section img {
             margin-left: 20px; /* Add space between image and text */
+        }
+
+        /* Styles for contact details */
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .contact-item img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
@@ -110,6 +127,25 @@
                     <p>Experimental Physics IV, University of Augsburg, Germany </p>
                 </div>
                 <img src="profile.jpg" alt="Aisha Aqeel" class="profile-img">
+            </div>
+            <!-- Contact details section -->
+            <div class="contact-details">
+                <div class="contact-item">
+                    <img src="address-icon.png" alt="Address Icon">
+                    <span>Office: 339 (S), Lab: 226(R), Universitätsstraße 1 (Physik Süd), 86159 Augsburg, Germany</span>
+                </div>
+                <div class="contact-item">
+                    <img src="email-icon.png" alt="Email Icon">
+                    <span><a href="mailto:aisha.aqeel@uni-a.de">aisha.aqeel@uni-a.de</a></span>
+                </div>
+                <div class="contact-item">
+                    <img src="phone-icon.png" alt="Phone Icon">
+                    <span>+49 (0) 821 / 598 - 3117</span>
+                </div>
+                <div class="contact-item">
+                    <img src="website-icon.png" alt="Website Icon">
+                    <span><a href="https://www.uni-augsburg.de/de/fakultaet/mntf/physik/groups/exp4/team/aqeel/" target="_blank">Group Page</a></span>
+                </div>
             </div>
         </section>
         <section id="projects" class="section">
@@ -141,24 +177,16 @@
             <h2>Selected Publications</h2>
             <div class="publication">
                 <p><strong>Task-adaptive physical reservoir computing</strong>, Nature Materials, 23, 79–87 (2024). [<em>Co-authored by A. Aqeel</em>]</p>
-	    </div>
+            </div>
             <div class="publication">
                 <p><strong>Hybrid magnetization dynamics in Cu2OSeO3/NiFe heterostructures</strong>, Appl. Phys. Lett., 122, 012401 (2023). [<em>Co-authored by A. Aqeel</em>]</p>
             <p>A complete <strong>list of publications is available on <a href="https://scholar.google.com/citations?user=Z9Kkz64AAAAJ&hl=en" target="_blank">here</a>.</strong></p>
-	    </div>
+            </div>
             <!-- Add more publications as needed -->
         </section>
         <section id="contact" class="section">
             <h2>Contact Us</h2>
             <p>For more information, research visits or collaboration inquiries, please reach out to us:</p>
-            <p>Email: <a href="mailto:aisha.aqeel@uni-a.de">aisha.aqeel@uni-a.de</a> or visit 
-		    <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/physik/groups/exp4/team/aqeel/" target="_blank">Experimental Physics IV</a> at the University of Augsburg</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/aisha-aqeel-84417895" target="_blank">Aisha Aqeel</a></p>
-            <p>Address: Universitätsstraße 1 (Physik Süd), 86159 Augsburg, Germany</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; Working Group Aqeel @ University of Augsburg. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+            <p>Email: <a href="mailto:aisha.aqeel@uni-a.de">aisha.aqeel@uni-a.de</a> or visit our 
+		    <a href="https://www.uni-augsburg.de/de/fakultaet/mntf/physik/groups/exp4/team/aqeel/" target="_blank">group page</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin
