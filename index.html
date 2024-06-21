@@ -60,29 +60,20 @@
             bottom: 0;
         }
 
-        /* Updated styles for uniform image sizing */
-        .profile-img,
-        .team-member img,
-        .publication img {
-            width: 150px; /* Set the width to 150px */
-            height: 150px; /* Set the height to 150px */
-            object-fit: cover; /* Maintain aspect ratio without distortion */
-            border-radius: 0; /* Ensure no rounding */
-        }
-
-        /* Additional spacing at the bottom of the contact section */
-        #contact {
-            margin-bottom: 60px; /* Add margin to the bottom of the contact section */
-        }
-
-        /* Flexbox for profile section */
+        /* Updated styles for profile section */
         .profile-section {
             display: flex;
-            align-items: center; /* Align items vertically */
-            justify-content: space-between; /* Space between items */
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px; /* Add gap between text and image */
+        }
+        .profile-section .text-container {
+            flex: 1; /* Allow the text to take more space */
         }
         .profile-section img {
-            margin-left: 20px; /* Add space between image and text */
+            width: 250px; /* Set a larger width for the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 0; /* Ensure no rounding */
         }
 
         /* Styles for contact details */
@@ -122,29 +113,29 @@
         <section id="about" class="section">
             <h2>About Us</h2>
             <div class="profile-section">
-                <div>
-                    <p>Welcome to the Emmy Noether research group of Dr. Aisha Aqeel at Experimental Physics IV, University of Augsburg</p>
+                <div class="text-container">
+                    <p>Welcome to the Emmy Noether research group of Dr. Aisha Aqeel at Experimental Physics IV, University of Augsburg.</p>
+                    <!-- Contact details section -->
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <img src="address-icon.png" alt="Address Icon">
+                            <span>Office: 339 (S), Lab: 226(R), Universitätsstraße 1 (Physik Süd), 86159 Augsburg, Germany</span>
+                        </div>
+                        <div class="contact-item">
+                            <img src="email-icon.png" alt="Email Icon">
+                            <span><a href="mailto:aisha.aqeel@uni-a.de">aisha.aqeel@uni-a.de</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <img src="phone-icon.png" alt="Phone Icon">
+                            <span>+49 (0) 821 / 598 - 3117</span>
+                        </div>
+                        <div class="contact-item">
+                            <img src="website-icon.png" alt="Website Icon">
+                            <span><a href="https://www.uni-augsburg.de/de/fakultaet/mntf/physik/groups/exp4/team/aqeel/" target="_blank">Experimental Physics IV</a></span>
+                        </div>
+                    </div>
                 </div>
                 <img src="profile.jpg" alt="Aisha Aqeel" class="profile-img">
-            </div>
-            <!-- Contact details section -->
-            <div class="contact-details">
-                <div class="contact-item">
-                    <img src="address-icon.png" alt="Address Icon">
-                    <span>Office: 339 (S), Lab: 226(R), Universitätsstraße 1 (Physik Süd), 86159 Augsburg, Germany</span>
-                </div>
-                <div class="contact-item">
-                    <img src="email-icon.png" alt="Email Icon">
-                    <span><a href="mailto:aisha.aqeel@uni-a.de">aisha.aqeel@uni-a.de</a></span>
-                </div>
-                <div class="contact-item">
-                    <img src="phone-icon.png" alt="Phone Icon">
-                    <span>+49 (0) 821 / 598 - 3117</span>
-                </div>
-                <div class="contact-item">
-                    <img src="website-icon.png" alt="Website Icon">
-                    <span><a href="https://www.uni-augsburg.de/de/fakultaet/mntf/physik/groups/exp4/team/aqeel/" target="_blank">Experimental Physics IV</a></span>
-                </div>
             </div>
         </section>
         <section id="projects" class="section">
