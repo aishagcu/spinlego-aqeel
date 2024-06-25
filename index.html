@@ -47,7 +47,8 @@
             margin-bottom: 40px;
         }
         .section h2 {
-            border-bottom: 2px solid #333;
+            /* Remove border-bottom from headers */
+            /* border-bottom: 2px solid #333; */
             padding-bottom: 10px;
         }
         footer {
@@ -109,13 +110,12 @@
         .news-section h2 {
             color: #4A4A4A;
             font-size: 24px;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Remove bottom border */
         }
         .news-item {
             margin-bottom: 20px;
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
+            border-bottom: 1px solid #ddd; /* Add grey line between items */
+            padding-bottom: 10px;
         }
         .news-item h3 {
             font-size: 20px;
@@ -136,14 +136,13 @@
         .events-news h2 {
             color: #4A4A4A;
             font-size: 24px;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Remove bottom border */
         }
         .event-item {
             display: flex;
             align-items: flex-start;
             padding: 10px 0;
-            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd; /* Add grey line between items */
         }
         .event-date {
             flex: 0 0 80px;
@@ -303,7 +302,7 @@
         </section>
     </div>
     <footer>
-        <p>&copy; Working Group Aqeel @ University of Augsburg. All rights reserved.
+        <p>&copy; Working Group Aqeel @ University of Augsburg. All rights reserved.</p>
     </footer>
 </body>
 </html>
