@@ -99,6 +99,54 @@
             height: auto; /* Maintain aspect ratio */
             object-fit: cover; /* Cover the available space while maintaining aspect ratio */
         }
+
+        /* Styles for Event & News section */
+        .events-news {
+            background-color: #f4f4f9;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        .events-news h2 {
+            color: #4A4A4A;
+            font-size: 24px;
+            border-bottom: 2px solid #4A4A4A;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .event-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+        }
+        .event-date {
+            flex: 0 0 80px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #4A4A4A;
+            text-align: center;
+        }
+        .event-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .event-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .event-description {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .event-link {
+            font-size: 14px;
+            color: #4A4A4A;
+            text-decoration: none;
+        }
+        .event-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -110,15 +158,16 @@
         </div>
     </header>
     <nav>
-        <a href="#about">About Us</a>
+        <a href="#start">Start</a>
         <a href="#projects">Projects</a>
         <a href="#team">Team</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
-        <section id="about" class="section">
-            <h2>About Us</h2>
+        <!-- Start Section -->
+        <section id="start" class="section">
+            <h2>Start</h2>
             <div class="profile-section">
                 <div class="text-container">
                     <p>Welcome to the Emmy Noether research group of Dr. Aisha Aqeel at Experimental Physics IV, University of Augsburg.</p>
@@ -144,16 +193,42 @@
                 </div>
                 <img src="profile.jpg" alt="Aisha Aqeel" class="profile-img">
             </div>
+
+            <!-- Event & News Section within Start -->
+            <div class="events-news">
+                <h2>Events & News</h2>
+                <div class="event-item">
+                    <div class="event-date">
+                        <div>JUL</div>
+                        <div>23-25</div>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-title">SPICE Workshop:</div>
+                        <div class="event-description">SPICE Workshop on Spin textures: Magnetism meets Plasmonics, Ingelheim</div>
+                        <a href="https://www.spice.uni-mainz.de/tba-66/" class="event-link">Invited talk</a>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <div>JUN</div>
+                        <div>27</div>
+                    </div>
+                    <div class="event-details">
+                        <div class="event-title">TRR 360 Sonderseminar:</div>
+                        <div class="event-description">Ultrafast spin-orbitronics with terahertz electromagnetic pulses</div>
+                        <a href="#" class="event-link">Find out more</a>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section id="projects" class="section">
             <h2>Our Projects</h2>
             <p>Our group is engaged in several cutting-edge research projects aimed at understanding and utilizing helimagnetic insulators for advanced spintronic applications. Key projects include:</p>
             <ul>
-                <li><strong>Quantum Materials:</strong> Design and engineer chiral helimagnetic insulators with ultralow magnetic damping.</li>
-                <li><strong>Magnetic textures:</strong>Unveil topologically protected magnetic phases in novel magnetic materials.</li>
-		<li><strong>Spin transport:</strong> Efficient long range magnon spin transport in noncollinear magnetic materials and devices.</li>
-                <li><strong>Spin-orbit torques:</strong>Generation and detection of incoherent magnons under spin-orbit torque.</li>
-		<li><strong>Spin Seebeck effect:</strong>Generation and detection of incoherent magnons under thermal excitations.</li>
+                <li><strong>SpinLEGO:</strong> Spintronics with chiral helimagnetic insulators.</li>
+                <li><strong>Quantum Materials:</strong> Engineering bulk and nanostructured quantum materials.</li>
+                <li><strong>Skyrmionics:</strong> Exploring novel magnetic materials hosting skyrmions.</li>
             </ul>
         </section>
         <section id="team" class="section">
